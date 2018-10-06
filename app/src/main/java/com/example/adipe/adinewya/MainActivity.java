@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         if ((eivar1.getText().toString().equals("")) || (eivar1.getText().toString().equals(".-")) || ((eivar1.getText().toString().equals(".")) || (eivar1.getText().toString().equals("-")) || (eivar1.getText().toString().equals("-."))) ||
                 ((heformac.getText().toString().equals("")) || (heformac.getText().toString().equals(".-")) || ((heformac.getText().toString().equals(".")) || (heformac.getText().toString().equals("-")) || (heformac.getText().toString().equals("-.")))))
 
-            Toast.makeText(this, "Input is unavailable", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "הקלט שהכנסת לא תקין", Toast.LENGTH_SHORT).show();
 
         else {
             String st = eivar1.getText().toString();
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             String st2 = heformac.getText().toString();
             k = Double.parseDouble(st2);
             if ((!rb1.isChecked()) && (!rb2.isChecked()))
-                Toast.makeText(this, "You need to finish in order to continue", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "צריך לסיים למלא את הכל", Toast.LENGTH_LONG).show();
             else {
                 if (rb1.isChecked())
                     sidra = 1;
